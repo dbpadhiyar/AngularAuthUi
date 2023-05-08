@@ -1,1 +1,22 @@
-<p>dashboard works!</p>
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">Angular AUTH</a>
+        <div>
+            <h4>Hello {{fullName}}</h4>
+        </div>
+    </div>
+</nav>
+
+
+<table class="table">
+    <thead class="table-light">
+        <th>FullName</th>
+        <th>UserName</th>
+        <th>Email</th>
+    </thead>
+    <tbody *ngFor="let user of users">
+        <td>{{user.firstName}} {{user.lastName}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.email}}</td>
+    </tbody>
+</table>
